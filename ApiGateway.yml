@@ -9,18 +9,18 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
-        - id: USER-SERVICE
+        - id: USERSERVICE
           uri: lb://USERSERVICE
           predicates:
             - Path=/users/**
 
-        - id: RATING-SERVICE
+        - id: RATINGSERVICE
           uri: lb://RATINGSERVICE
           predicates:
             - Path=/ratings/**
 
-        - id: HOTEL-SERVICE
-          uri: lb://HOTEL-SERVICE
+        - id: HOTELSERVICE
+          uri: lb://HOTELSERVICE
           predicates:
             - Path=/hotels/**
 
