@@ -7,7 +7,7 @@ spring:
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
   application:
-    name: Rating-Service
+    name: RatingService
 eureka:
   instance:
     prefer-ip-address: true
